@@ -1,0 +1,8 @@
+com/utils/serialization/SerializeTest.class
+com/utils/pojo/User$UserBuilder.class
+com/utils/serialization/ProtostuffSerializeUtil.class
+com/utils/pojo/User.class
+com/utils/serialization/AbstractSerialize.class
+com/utils/serialization/JdkSerializeUtil.class
+com/utils/serialization/FastjsonSerializeUtil.class
+com/utils/pojo/Location.class

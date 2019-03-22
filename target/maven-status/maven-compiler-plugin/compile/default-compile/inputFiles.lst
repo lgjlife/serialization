@@ -1,0 +1,7 @@
+/home/lgj/aProject/serialization/src/main/java/com/utils/pojo/User.java
+/home/lgj/aProject/serialization/src/main/java/com/utils/serialization/AbstractSerialize.java
+/home/lgj/aProject/serialization/src/main/java/com/utils/serialization/JdkSerializeUtil.java
+/home/lgj/aProject/serialization/src/main/java/com/utils/serialization/FastjsonSerializeUtil.java
+/home/lgj/aProject/serialization/src/main/java/com/utils/serialization/SerializeTest.java
+/home/lgj/aProject/serialization/src/main/java/com/utils/serialization/ProtostuffSerializeUtil.java
+/home/lgj/aProject/serialization/src/main/java/com/utils/pojo/Location.java
