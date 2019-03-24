@@ -27,6 +27,10 @@ public class JdkSerializeUtil extends  AbstractSerialize {
     }
     public <T> byte[] serialize(T obj) {
 
+        if (obj  == null){
+            throw new NullPointerException();
+        }
+
         ByteArrayOutputStream bos = new ByteArrayOutputStream();
         try {
             ObjectOutputStream oos = new ObjectOutputStream(bos);

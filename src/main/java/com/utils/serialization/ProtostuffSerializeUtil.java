@@ -46,6 +46,9 @@ public class ProtostuffSerializeUtil  extends  AbstractSerialize{
 
     public   <T> byte[] serialize(T obj) {
 
+        if (obj  == null){
+            throw new NullPointerException();
+        }
         Class<T> clazz = (Class<T>) obj.getClass();
         Schema<T> schema = getSchema(clazz);
         byte[] data;
