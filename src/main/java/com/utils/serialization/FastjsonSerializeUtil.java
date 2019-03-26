@@ -24,9 +24,6 @@ public class FastjsonSerializeUtil  extends  AbstractSerialize {
 
         String json = JSON.toJSONString(obj);
         byte[] data = json.getBytes();
-        System.out.println("json = " + json);
-
-
         return data;
     }
 

@@ -3,7 +3,7 @@
 * [JDK方式](https://github.com/lgjlife/serialization/blob/master/src%2Fmain%2Fjava%2Fcom%2Futils%2Fserialization%2FJdkSerializeUtil.java)
 * [Fastjson方式](https://github.com/lgjlife/serialization/blob/master/src%2Fmain%2Fjava%2Fcom%2Futils%2Fserialization%2FFastjsonSerializeUtil.java)
 * [Protostuff方式](https://github.com/lgjlife/serialization/blob/master/src%2Fmain%2Fjava%2Fcom%2Futils%2Fserialization%2FProtostuffSerializeUtil.java)
-
+* [Hessian方式](https://github.com/lgjlife/serialization/blob/master/src%2Fmain%2Fjava%2Fcom%2Futils%2Fserialization%2HessianSerializeUtil.java)
 # 使用事例
 
 * 定义pojo
@@ -27,5 +27,24 @@ byte[] body = serialize.serialize(msg);
 User user1 = serialize.deserialize(body,User.class);
 
 
+
+```
+## 测试
+[测试类](https://github.com/lgjlife/serialization/blob/master/src%2Fmain%2Fjava%2Fcom%2Futils%2Ftest%2FSerializeTest.java)
+
+综合来看,hessian 的效率是比较高的。fastjson效率相对偏低。
+```java
+序列化对象类：java.util.ArrayList  序列化类：com.utils.serialization.JdkSerializeUtil  序列化花费时间：369 字节长度 =  788948
+序列化对象类：java.util.ArrayList  序列化类：com.utils.serialization.FastjsonSerializeUtil  序列化花费时间：417 字节长度 =  788891
+序列化对象类：java.util.ArrayList  序列化类：com.utils.serialization.HessianSerializeUtil  序列化花费时间：242 字节长度 =  788897
+
+序列化对象类：java.util.HashMap  序列化类：com.utils.serialization.JdkSerializeUtil  序列化花费时间：284 字节长度 =  1577862
+序列化对象类：java.util.HashMap  序列化类：com.utils.serialization.FastjsonSerializeUtil  序列化花费时间：393 字节长度 =  1577781
+序列化对象类：java.util.HashMap  序列化类：com.utils.serialization.HessianSerializeUtil  序列化花费时间：184 字节长度 =  1577785
+
+序列化对象类：com.utils.pojo.TestPojo  序列化类：com.utils.serialization.JdkSerializeUtil  序列化花费时间：21 字节长度 =  977
+序列化对象类：com.utils.pojo.TestPojo  序列化类：com.utils.serialization.FastjsonSerializeUtil  序列化花费时间：58 字节长度 =  1192
+序列化对象类：com.utils.pojo.TestPojo  序列化类：com.utils.serialization.HessianSerializeUtil  序列化花费时间：4 字节长度 =  1319
+序列化对象类：com.utils.pojo.TestPojo  序列化类：com.utils.serialization.ProtostuffSerializeUtil  序列化花费时间：67 字节长度 =  825
 
 ```

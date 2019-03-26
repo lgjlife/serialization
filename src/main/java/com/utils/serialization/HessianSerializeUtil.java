@@ -11,6 +11,9 @@ import java.io.ByteArrayOutputStream;
 public class HessianSerializeUtil extends  AbstractSerialize {
 
     public static  HessianSerializeUtil serializeUtil = new HessianSerializeUtil();
+    public static HessianSerializeUtil getSingleton(){
+        return  serializeUtil;
+    }
 
     public static void main(String args[]){
         Location location = new Location("深圳");
