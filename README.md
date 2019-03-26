@@ -2,8 +2,42 @@
 
 * [JDK方式](https://github.com/lgjlife/serialization/blob/master/src%2Fmain%2Fjava%2Fcom%2Futils%2Fserialization%2FJdkSerializeUtil.java)
 * [Fastjson方式](https://github.com/lgjlife/serialization/blob/master/src%2Fmain%2Fjava%2Fcom%2Futils%2Fserialization%2FFastjsonSerializeUtil.java)
+```XML
+<!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+<dependency>
+    <groupId>com.alibaba</groupId>
+    <artifactId>fastjson</artifactId>
+    <version>1.2.56</version>
+</dependency>
+```
 * [Protostuff方式](https://github.com/lgjlife/serialization/blob/master/src%2Fmain%2Fjava%2Fcom%2Futils%2Fserialization%2FProtostuffSerializeUtil.java)
+```XML
+<!-- https://mvnrepository.com/artifact/io.protostuff/protostuff-core -->
+<dependency>
+    <groupId>io.protostuff</groupId>
+    <artifactId>protostuff-core</artifactId>
+    <version>1.6.0</version>
+    <scope>test</scope>
+</dependency>
+
+
+
+<!-- https://mvnrepository.com/artifact/io.protostuff/protostuff-runtime -->
+<dependency>
+    <groupId>io.protostuff</groupId>
+    <artifactId>protostuff-runtime</artifactId>
+    <version>1.6.0</version>
+</dependency>
+```
 * [Hessian方式](https://github.com/lgjlife/serialization/blob/master/src%2Fmain%2Fjava%2Fcom%2Futils%2Fserialization%2HessianSerializeUtil.java)
+```XML
+<!-- https://mvnrepository.com/artifact/com.caucho/hessian -->
+<dependency>
+    <groupId>com.caucho</groupId>
+    <artifactId>hessian</artifactId>
+    <version>4.0.60</version>
+</dependency>
+```
 # 使用事例
 
 * 定义pojo
